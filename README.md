@@ -6,7 +6,7 @@ The application provides personalized nutrition recommendations based on user-sp
 
 ---
 
-## Project Overview
+## 📌 Project Overview
 
 Maintaining a healthy lifestyle requires personalized guidance and consistent monitoring. NutriAssist provides a centralized platform where users can manage their nutrition and health-related information.
 
@@ -24,9 +24,9 @@ The application provides:
 
 ---
 
-## Key Features
+## ✨ Key Features
 
-### 1. User Authentication
+### 🔐 1. User Authentication
 
 - User registration
 - User login
@@ -37,13 +37,13 @@ The application provides:
 
 ---
 
-### 2. Personalized Nutrition Dashboard
+### 📊 2. Personalized Nutrition Dashboard
 
 The dashboard provides users with an overview of their health and nutrition information.
 
 Users can:
 
-- View their personal profile information
+- View personal profile information
 - Select their health goal
 - Generate a personalized nutrition plan
 - View recommended daily calorie intake
@@ -58,14 +58,14 @@ Supported goals include:
 
 ---
 
-### 3. Nutrition Analysis
+### 🧮 3. Nutrition Analysis
 
 The application generates personalized nutrition insights based on user information.
 
 The nutrition analysis includes:
 
 - Body Mass Index (BMI)
-- BMI category
+- BMI category classification
 - Estimated daily calorie requirements
 - Daily protein target
 - Daily carbohydrate target
@@ -74,7 +74,7 @@ The nutrition analysis includes:
 
 ---
 
-### 4. Food Tracker
+### 🍎 4. Food Tracker
 
 The Food Tracker enables users to record and monitor their daily food intake.
 
@@ -89,7 +89,7 @@ Users can:
 
 ---
 
-### 5. Diet Plan Management
+### 🥗 5. Diet Plan Management
 
 Users can create and manage personalized diet plans.
 
@@ -103,7 +103,7 @@ Features include:
 
 ---
 
-### 6. Progress and Reports
+### 📈 6. Progress and Reports
 
 The Progress and Reports section helps users monitor their nutrition and health-related progress.
 
@@ -116,7 +116,7 @@ Users can view:
 
 ---
 
-## Application Screens
+## 🖥️ Application Screens
 
 The application consists of the following major screens:
 
@@ -124,14 +124,14 @@ The application consists of the following major screens:
 - User Registration
 - User Login
 - Personalized Dashboard
-- Nutrition Plan
+- Nutrition Analysis
 - Food Tracker
 - Diet Plans
 - Progress and Reports
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 ### Frontend
 
@@ -141,6 +141,7 @@ The application consists of the following major screens:
 - CSS3
 - Axios
 - React Router
+- Vite
 
 ### Backend
 
@@ -157,6 +158,7 @@ The application consists of the following major screens:
 - JSON Web Token (JWT)
 - bcrypt
 - Environment variables for sensitive configuration
+- Protected API routes
 
 ### Development Tools
 
@@ -167,43 +169,49 @@ The application consists of the following major screens:
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 ```text
-                    ┌─────────────────────┐
-                    │        User         │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │   React Frontend    │
-                    │                     │
-                    │  React Router      │
-                    │  Axios             │
-                    │  CSS               │
-                    └──────────┬──────────┘
-                               │
-                    HTTP Requests / REST APIs
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │  Node.js + Express  │
-                    │                     │
-                    │  Authentication    │
-                    │  API Processing    │
-                    │  Business Logic    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │    MongoDB Atlas    │
-                    │                     │
-                    │  User Data         │
-                    │  Food Records      │
-                    │  Diet Plans        │
-                    │  Progress Data     │
-                    └─────────────────────┘
-Project Structure
+                         ┌─────────────────────┐
+                         │        User         │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │   React Frontend    │
+                         │                     │
+                         │   React Router      │
+                         │   Axios             │
+                         │   CSS               │
+                         └──────────┬──────────┘
+                                    │
+                         HTTP Requests / REST APIs
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │  Node.js + Express  │
+                         │                     │
+                         │  Authentication    │
+                         │  API Processing    │
+                         │  Business Logic    │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │    MongoDB Atlas    │
+                         │                     │
+                         │  User Data         │
+                         │  Food Records      │
+                         │  Diet Plans        │
+                         │  Progress Data     │
+                         └─────────────────────┘
+```
+
+---
+
+## 📁 Project Structure
+
+```text
 Nutrition-Assistant/
 │
 ├── client/
@@ -231,96 +239,158 @@ Nutrition-Assistant/
 ├── .gitignore
 │
 └── README.md
-Installation and Setup
-Prerequisites
+```
+
+---
+
+## 🚀 Installation and Setup
+
+### Prerequisites
 
 Make sure the following are installed:
 
-Node.js
-npm
-MongoDB Atlas account
-Git
-1. Clone the Repository
+- Node.js
+- npm
+- MongoDB Atlas account
+- Git
+
+---
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/238x1a05h5-code/NutritionAssistant.git
+```
 
 Navigate into the project directory:
 
+```bash
 cd NutritionAssistant
-2. Install Frontend Dependencies
+```
+
+---
+
+### 2. Install Frontend Dependencies
+
+```bash
 cd client
 npm install
-3. Install Backend Dependencies
+```
+
+---
+
+### 3. Install Backend Dependencies
 
 Open another terminal and run:
 
+```bash
 cd server
 npm install
-4. Configure Environment Variables
+```
 
-Create a .env file inside the server directory.
+---
+
+### 4. Configure Environment Variables
+
+Create a `.env` file inside the `server` directory.
 
 Example:
 
+```env
 PORT=8000
 MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret
+```
 
-Never commit the .env file to GitHub. Environment variables contain sensitive information such as database credentials and secret keys.
+> ⚠️ Never commit the `.env` file to GitHub. Environment variables may contain sensitive information such as database credentials and secret keys.
 
-5. Start the Backend Server
+---
 
-Inside the server directory:
+### 5. Start the Backend Server
 
+Inside the `server` directory:
+
+```bash
 node index.js
+```
 
 The backend server will run on:
 
+```text
 http://localhost:8000
-6. Start the Frontend
+```
 
-Inside the client directory:
+---
 
+### 6. Start the Frontend
+
+Inside the `client` directory:
+
+```bash
 npm run dev
+```
 
 The frontend application will be available at the URL provided by Vite, usually:
 
+```text
 http://localhost:5173
-API Overview
+```
 
-The backend provides REST API endpoints for authentication, user management, food tracking, diet planning, nutrition suggestions, and progress monitoring.
+---
 
-Authentication
+## 🔌 API Overview
+
+The backend provides REST API endpoints for authentication, nutrition suggestions, food tracking, diet planning, and progress monitoring.
+
+### Authentication
+
+```text
 POST /api/auth/register
 POST /api/auth/login
-Nutrition Suggestions
+```
+
+### Nutrition Suggestions
+
+```text
 POST /api/suggestions
-Food Tracking
+```
+
+### Food Tracking
+
+```text
 GET    /api/food
 POST   /api/food
 DELETE /api/food/:id
-Diet Plans
+```
+
+### Diet Plans
+
+```text
 GET    /api/diet-plans
 POST   /api/diet-plans
 DELETE /api/diet-plans/:id
-Security
+```
+
+---
+
+## 🔒 Security
 
 The application follows basic security practices, including:
 
-Password hashing using bcrypt
-JWT-based authentication
-Protected API routes
-User-specific data access
-Environment variables for sensitive configuration
-.env excluded from version control using .gitignore
-Project Screenshots
+- Password hashing using bcrypt
+- JWT-based authentication
+- Protected API routes
+- User-specific data access
+- Environment variables for sensitive configuration
+- `.env` excluded from version control using `.gitignore`
 
-Screenshots of the application interfaces and major features are available here:
+---
 
-## Project Screenshots
+## 📸 Project Screenshots
 
-Screenshots of the application interfaces and major features are available here:
+Screenshots of the application's interfaces and major features are available in the following document:
 
-📄 **[View Project Screenshots](https://docs.google.com/document/d/1uXGS1rZoCBe6wyZcIDoPdhB0cn77MN2h/edit?usp=sharing&ouid=116142877459962683813&rtpof=true&sd=true)**
+📄 **[View Project Screenshots](https://docs.google.com/document/d/1uXGS1rZoCBe6wyZcIDoPdhB0cn77MN2h/edit?usp=sharing)**
 
 The screenshots include:
 
@@ -335,13 +405,13 @@ The screenshots include:
 
 ---
 
-## Project Demo Video
+## 🎥 Project Demo Video
 
 A complete demonstration of the NutriAssist application is available below:
 
-🎥 **[Watch the Project Demo Video](https://drive.google.com/file/d/148h4f4LLpj4HliZAgK630olMpM3j4BxF/view?usp=sharing)**
+🎥 **[Watch the NutriAssist Demo Video](https://drive.google.com/file/d/148h4f4LLpj4HliZAgK630olMpM3j4BxF/view?usp=sharing)**
 
-The demo demonstrates:
+The demonstration includes:
 
 - User registration and login
 - Personalized dashboard
@@ -350,9 +420,38 @@ The demo demonstrates:
 - Diet plan management
 - Progress and report features
 
-## Author
+---
 
-**Project:** NutriAssist – Nutrition Assistant
+## 🔮 Future Enhancements
+
+Future improvements planned for NutriAssist include:
+
+- AI-powered meal recommendations
+- Integration with wearable fitness devices
+- Advanced progress visualizations
+- Weekly and monthly nutrition reports
+- Food database integration
+- Barcode-based food scanning
+- Mobile application support
+- Improved personalized meal planning
+
+---
+
+## 🎯 Conclusion
+
+NutriAssist provides a complete platform for personalized nutrition management.
+
+By combining user health information, nutrition analysis, food tracking, diet planning, and progress monitoring, the application helps users make informed decisions and work towards their individual health goals.
+
+---
+
+## 👤 Author
+
+**Project Name:** NutriAssist – Nutrition Assistant
 
 **Repository:**  
-https://github.com/238x1a05h5-code/NutritionAssistant
+[View the NutriAssist GitHub Repository](https://github.com/238x1a05h5-code/NutritionAssistant)
+
+---
+
+⭐ If you find this project useful, consider giving the repository a star!
