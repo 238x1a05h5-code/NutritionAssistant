@@ -1,0 +1,137 @@
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8faf7;
+    padding: 30px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 600px;
+    display: flex;
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.auth-brand {
+    flex: 1;
+    padding: 60px 45px;
+    background: #4f8f5b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-brand h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.auth-brand p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.auth-form-section {
+    flex: 1;
+    padding: 45px;
+    overflow-y: auto;
+}
+
+.auth-form-section h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    color: #667085;
+    margin-bottom: 25px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.auth-form input,
+.auth-form select {
+    padding: 13px 15px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+    border-color: #4f8f5b;
+    box-shadow: 0 0 0 3px rgba(79, 143, 91, 0.12);
+}
+
+.auth-form button {
+    margin-top: 8px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #4f8f5b;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background: #3d7548;
+}
+
+.auth-message {
+    margin-top: 15px;
+    color: #d92d20;
+}
+
+.auth-switch {
+    margin-top: 20px;
+    color: #667085;
+}
+
+.auth-switch button {
+    border: none;
+    background: none;
+    color: #4f8f5b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.back-home {
+    margin-bottom: 20px;
+    border: none;
+    background: none;
+    color: #4f8f5b;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-brand {
+        padding: 35px;
+    }
+
+    .auth-brand h1 {
+        font-size: 32px;
+    }
+
+    .auth-form-section {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,307 @@
+/* =========================
+   LANDING PAGE
+========================= */
+
+.landing-page {
+    min-height: 100vh;
+    background: #f8faf7;
+    color: #1f2933;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 60px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.logo span {
+    color: #4f8f5b;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn,
+.hero-button {
+    padding: 9px 16px;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.login-btn {
+    background: transparent;
+    color: #4f8f5b;
+}
+
+.signup-btn,
+.hero-button {
+    background: #4f8f5b;
+    color: white;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    min-height: 410px;
+
+    padding: 30px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.small-heading {
+    margin: 0 0 8px;
+
+    color: #4f8f5b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.hero-content h1 {
+    margin: 0 0 12px;
+
+    font-size: 48px;
+    line-height: 1.05;
+}
+
+.hero-content h1 span {
+    color: #4f8f5b;
+}
+
+.hero-description {
+    max-width: 450px;
+
+    margin: 0 0 18px;
+
+    color: #667085;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.hero-button {
+    padding: 11px 20px;
+}
+
+
+/* =========================
+   NUTRITION CARD
+========================= */
+
+.hero-card {
+    width: 280px;
+    height: 280px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #dcebdc;
+    border-radius: 50%;
+}
+
+.nutrition-card {
+    width: 215px;
+    padding: 18px;
+
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.nutrition-card h3 {
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.calorie-circle {
+    width: 105px;
+    height: 105px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 8px solid #79a982;
+    border-radius: 50%;
+}
+
+.calorie-circle strong {
+    font-size: 21px;
+}
+
+.calorie-circle span {
+    color: #667085;
+    font-size: 11px;
+}
+
+.macro-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.macro-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.macro-row strong {
+    font-size: 12px;
+}
+
+.macro-row span {
+    color: #667085;
+    font-size: 10px;
+}
+
+
+/* =========================
+   COMPACT FEATURES
+========================= */
+
+.features-section {
+    padding: 25px 6%;
+
+    background: white;
+
+    text-align: center;
+}
+
+.features-section h2 {
+    margin: 0 0 18px;
+
+    font-size: 24px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.feature-card {
+    padding: 18px 15px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.feature-icon {
+    margin-bottom: 6px;
+    font-size: 27px;
+}
+
+.feature-card h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.feature-card p {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 12px;
+
+    color: #667085;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero-section {
+        min-height: auto;
+
+        padding: 35px 20px;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features-section {
+        padding: 25px 20px;
+    }
+}

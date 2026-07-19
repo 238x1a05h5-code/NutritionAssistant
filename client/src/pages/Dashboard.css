@@ -1,0 +1,339 @@
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f5f7fb;
+    font-family:'Segoe UI',sans-serif;
+    overflow-x:hidden;
+}
+
+.dashboard-page{
+    min-height:100vh;
+    background:#f5f7fb;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.dashboard-navbar{
+    height:70px;
+    background:#fff;
+    padding:0 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+
+.dashboard-logo{
+    font-size:28px;
+    font-weight:800;
+    color:#1f2937;
+}
+
+.dashboard-logo span{
+    color:#4f8f5b;
+}
+
+.logout-btn{
+    padding:10px 22px;
+    border:none;
+    border-radius:10px;
+    background:#ef4444;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#dc2626;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.dashboard-content{
+    max-width:1300px;
+    margin:auto;
+    padding:35px 20px;
+}
+
+.welcome-section{
+    margin-bottom:30px;
+}
+
+.welcome-section h1{
+    font-size:38px;
+    color:#1e293b;
+}
+
+.welcome-section p{
+    margin-top:8px;
+    color:#64748b;
+    font-size:17px;
+}
+
+/* ===========================
+   TOP GRID
+=========================== */
+
+.dashboard-top{
+    display:grid;
+    grid-template-columns:340px 1fr;
+    gap:25px;
+    margin-bottom:35px;
+}
+
+/* ===========================
+   PROFILE CARD
+=========================== */
+
+.profile-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.profile-card h2{
+    margin-bottom:25px;
+    color:#1e293b;
+}
+
+.profile-details{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.profile-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:12px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.profile-item span{
+    color:#64748b;
+}
+
+.profile-item strong{
+    color:#111827;
+}
+
+/* ===========================
+   GOAL CARD
+=========================== */
+
+.goal-section{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.goal-section h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.goal-section select{
+    width:100%;
+    padding:13px;
+    border-radius:10px;
+    border:1px solid #d1d5db;
+    margin-bottom:20px;
+    font-size:15px;
+}
+
+.goal-section select:focus{
+    outline:none;
+    border-color:#4f8f5b;
+    box-shadow:0 0 0 3px rgba(79,143,91,.15);
+}
+/* ===========================
+   BUTTON GRID
+=========================== */
+
+.action-buttons{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.generate-btn{
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#4f8f5b;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.generate-btn:hover{
+    background:#3d7548;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   ERROR MESSAGE
+=========================== */
+
+.error-message{
+    margin-top:18px;
+    color:#dc2626;
+    font-weight:600;
+}
+
+/* ===========================
+   NUTRITION SECTION
+=========================== */
+
+.nutrition-section{
+    margin-top:35px;
+}
+
+.nutrition-section h2{
+    margin-bottom:22px;
+    font-size:30px;
+    color:#1e293b;
+}
+
+.nutrition-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.nutrition-card{
+    background:#fff;
+    border-radius:18px;
+    padding:28px 20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.nutrition-card:hover{
+    transform:translateY(-6px);
+}
+
+.nutrition-card h3{
+    font-size:17px;
+    color:#64748b;
+    margin-bottom:15px;
+}
+
+.nutrition-card strong{
+    display:block;
+    font-size:34px;
+    color:#4f8f5b;
+    margin-bottom:8px;
+}
+
+.nutrition-card span{
+    color:#94a3b8;
+}
+
+/* ===========================
+   RECOMMENDATIONS
+=========================== */
+
+.recommendations-section{
+    margin-top:35px;
+    background:#fff;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.recommendations-section h2{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.recommendations-section ul{
+    list-style:none;
+    padding:0;
+}
+
+.recommendations-section li{
+    background:#f8fafc;
+    margin-bottom:14px;
+    padding:16px 18px;
+    border-left:5px solid #4f8f5b;
+    border-radius:10px;
+    color:#475569;
+    font-size:15px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .dashboard-top{
+        grid-template-columns:1fr;
+    }
+
+    .action-buttons{
+        grid-template-columns:1fr 1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nutrition-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .action-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-navbar{
+        padding:0 20px;
+    }
+
+    .dashboard-content{
+        padding:25px 15px;
+    }
+
+    .welcome-section h1{
+        font-size:30px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .nutrition-grid{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-logo{
+        font-size:22px;
+    }
+
+    .logout-btn{
+        padding:8px 16px;
+    }
+
+}
